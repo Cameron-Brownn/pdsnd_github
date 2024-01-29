@@ -1,17 +1,47 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# Bikeshare data comparison
+Project completed 09/01/24.
 
-### Date created
-Include the date you created this project and README file.
-
-### Project Title
-Replace the Project Title
+### Project Overview
+This project uses python aswell as the pandas and numpy libraries, to perform analysis on bikeshare data across three cities - New York, Chicago and Washington.
 
 ### Description
-Describe what your project is about and what it does
+The program takes user input for which city to view data, the month to view (includes option for 'all' months), and the day of the week (includes an option for 'all' days).
+
+Upon receiving user input, the user is asked whether they would like to view 5 rows of raw data, with the option after to show another 5 or end the program.
+
+After the user input for this prompt is received, the program will display the following:
+
+* Most popular month
+* Most popular day
+* Most popular hour
+* Most popular start station
+* Most popular end station
+* Most popular combination of start and end stations
+* Total trip duration
+* Average trip duration
+* Type of users by number
+* Type of users by gender (where applicable)
+* Oldest user (where applicable)
+* Youngest user (where applicable)
+* Most common birth year amongst users (where applicable)
+
+This is followed by a prompt giving the choice to restart the program.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+
+### Requirements
+Python 3 or above
+Pandas, numpy, time
+
+### Author
+Cameron Brown
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
+Udacity - Course material 
+Python documentation 
+Pandas documentation
 
