@@ -32,7 +32,7 @@ def get_filters():
 
     # Get user input for month and validate
     while True:
-        month = input(f"Please select a month to analyze {city.title()} bikeshare data for.\nChoose between January to June, or type 'all':")
+        month = input(f"Please select a month to analyze {city.title()} bikeshare data for.\nChoose between January and June, or type 'all':")
         month = month.lower()
         if month not in ("january", "february", "march", "april", "may", "june", "all"):
             print("Please enter a month between January and June. Or select all.")
@@ -181,7 +181,7 @@ def user_stats(df):
         print("User Type Counts:")
         print(user_type_counts, '\n')
     else:
-        print("User Type information not available for this city.")
+        print("User Type data not available for this city.")
 
     # Display counts of gender
     if 'Gender' in df.columns:
@@ -189,7 +189,7 @@ def user_stats(df):
         print("Gender Counts:")
         print(gender_counts, '\n')
     else:
-        print("Gender information not available for this city.")
+        print("Gender data not available for this city.")
 
     # Calculate and display statistics for birth year
     try:
@@ -201,7 +201,7 @@ def user_stats(df):
         print(f"The most recent birth year is: {recent_birthyear}, the earliest birth year is: {earliest_birthyear}, and the most common birth year is {common_birthyear}.")
 
     except KeyError:
-        print("Birth Year information not available for this city.")
+        print("Birth Year data not available for this city.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
